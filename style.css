@@ -1,113 +1,156 @@
-/* Genel ayarlar */
+/* Arka planı */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f8;
-    margin: 0;
-    padding: 0;
-    color: #333;
+    background: linear-gradient(180deg, #f4f6f8 0%, #cadcf8 100%);
+    height: 100vh;
 }
 
-/* Sayfa ortalama */
 .container {
-    width: 80%;
-    max-width: 900px;
-    margin: 40px auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
+    max-width: 1000px;
+    width: 90%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.kitap-alani {
+    background: linear-gradient(180deg, #f0f3fa 0%, #e1e6f5 100%);
     padding: 30px;
     border-radius: 8px;
+    max-width: 50%;
+    min-height: 300px;
+    max-width: 800px;
+    margin: 30px auto;
 }
-
-/* Başlıklar */
-h1 {
-    color: #1f3c88;
-    border-bottom: 2px solid #1f3c88;
-    padding-bottom: 10px;
-}
-
-h2 {
-    color: #2c4c9c;
-    margin-top: 30px;
-}
-
-/* Paragraflar */
-p {
-    line-height: 1.6;
-    font-size: 16px;
-}
-
 /* Kitap listesi */
+ul li a {
+    text-decoration: none;
+    display: block;
+    background-color: #f0f3fa;
+    font-size: 20px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+
+}
+
 ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 ul li {
-    margin: 10px 0;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #1f3c88;
-    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 ul li a:hover {
-    text-decoration: underline;
+    background-color: #e1e6f5;
+    transform: translateX(5px);
 }
 
-/* Geri Butonu */
+/* Alt çizgili */
+.ALT {
+    border-bottom: 3px solid #1f3c88;
+}
+
+/* Ana başlık */
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* h3 (yazar adı vb.) */
+h3 {
+    margin-top: 40px;
+    color: #1f3c88;
+    border-left: 5px solid #1f3c88;
+    padding-left: 10px;
+}
+
+/* Geri butonu */
 .geri-btn {
-    display: inline-block;
-    margin-bottom: 20px;
-    text-decoration: none;
-    background-color: #1f3c88;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
 }
 
 .geri-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* --- Test butonunu --- */
+
+.Butonlar {
+    border-radius: 6px;
+    color: white;
+    background-color: #1f3c88;
+    border: none;
+    height: 35px;
+    width: 120px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.Butonlar:hover {
+    rotate: 0deg; /* okul projesi için dönüşü kapattık */
+    background-color: #162f6b;
+    color: rgb(196, 193, 193);
+}
+
+.Butonlar:active {
+    transform: scale(0.97);
+}
+
+/* Başlık */
+.Title {
+    color: #1f3c88;
+    text-shadow: 1px 1px #cfd6ea;
+}
+
+/* Soru kutusu daha belirgin */
+
+.soru {
+    background-color: #f8f9fd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Cevaplar başta gizli */
+.cevap {
+    display: none;
+    transition: all 0.3s ease;
+    color: #1f3c88;
+}
+
+/* Cevap butonu */
+.cevap-btn {
+    margin-left: 15px;
+    padding: 5px 10px;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f3c88;
+    color: white;
+    cursor: pointer;
+}
+
+.cevap-btn:hover {
     background-color: #162f6b;
 }
 
-/* Soru-Cevap kutusu */
-.soru {
-    background-color: #eef1f7;
-    padding: 15px;
-    border-left: 5px solid #1f3c88;
-    margin-top: 15px;
+.Credits{
+    color: rgb(228, 228, 97);
+    text-shadow: 2px 1px rgb(133, 133, 8);
 }
 
-/* BUNDAN ÜSTÜ AI */
+@media (max-width: 768px) {
+    .kitap-alani {
+        max-width: 100%;
+        padding: 20px;
+    }
 
-.Test{
-    border-color: aqua;
-    border-radius: 10px;
-    background-color: blue;
-    color: white;
-    height: 25px;
-    width: 100px;
-    position: relative;
-    top: 200px;
-    left: 300px;
-    transition: 500ms ease all;
-}
-
-.Test:hover{
-    rotate: 5deg;
-    background-color: crimson;
-    border-color: darkred;
-    color: rgb(243, 215, 215);
-}
-
-.Test:active{
-    background-color: rgb(122, 13, 35);
-    border-color: darkred;
-    color: rgb(243, 133, 133);
-}
-
-.Title{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: crimson;
+    h1 {
+        font-size: 26px;
+    }
 }

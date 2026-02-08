@@ -2,7 +2,9 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Acımak</title>
+    <title>Eser Kutusu - Acımak</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../index.js"></script>
 </head>
 <body>
 
@@ -12,16 +14,42 @@
 <h1>Acımak</h1>
 <h3>Reşat Nuri Güntekin</h3>
 
+<h4 class="ALT"></h4>
+
 <h2>📖 Kitap Özeti</h2>
+
 <p>
-Jean Valjean, ekmek çaldığı için uzun yıllar hapis yatar. 
-Topluma yeniden kazanmaya çalışırken müfettiş Javert tarafından sürekli takip edilir...
+Zehra öğretmenin işini çok severek yapması, fakat sonradan geçmişi ile yüzleşmesini
+anlatan bu kitap, Zehra öğretmenin babasının ölüm haberini almasıyla başlıyor...
 </p>
 
-<h2>❓ Soru – Cevap</h2>
+<h4 class="ALT"></h4>
 
-<p><strong>Soru:</strong> Jean Valjean neden hapse girmiştir?</p>
-<p><strong>Cevap:</strong> Aç kalan ailesi için ekmek çaldığı için.</p>
+<h2>❓ Soru – Cevap</h2>
+<div class="soru">
+    <p>
+        <strong>Soru:</strong> DENEME SORU
+        <button class="cevap-btn" onclick="cevapGoster(this)">
+            Cevabı Göster
+        </button>
+    </p>
+
+    <p class="cevap">
+        <strong>Cevap:</strong>  DENEME CEVAP
+    </p>
+</div>
+<div class="soru">
+    <p>
+        <strong>Soru:</strong> Zehra öğretmen babasının ölüm haberini alınca ilk olarak nasıl bir tepki vermiş?
+        <button class="cevap-btn" onclick="cevapGoster(this)">
+            Cevabı Göster
+        </button>
+    </p>
+
+    <p class="cevap">
+        <strong>Cevap:</strong> İnanamamış, gitmeyi reddetmiş olsada sonradan razı olmuştur.
+    </p>
+</div>
 
 </body>
 </html>

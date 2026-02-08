@@ -2,7 +2,9 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Hayvan Çiftliği</title>
+    <title>Eser Kutusu - Hayvan Çiftliği</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../index.js"></script>
 </head>
 <body>
 
@@ -12,16 +14,44 @@
 <h1>Hayvan Çiftliği</h1>
 <h3>George Orwell</h3>
 
+<h4 class="ALT"></h4>
+
 <h2>📖 Kitap Özeti</h2>
 <p>
-Jean Valjean, ekmek çaldığı için uzun yıllar hapis yatar. 
-Topluma yeniden kazanmaya çalışırken müfettiş Javert tarafından sürekli takip edilir...
+    Koca reis hayvan Çiftliğinin ağır başlarından biridir, kendisi ne kadar
+    eşit bir devrimi savunyor olsada ileride Domuzlara ayrıcalık yapacak bir sistemin
+    temelini atar, O öldükten sonra yerine gelen Napoleon ve Snowball devrimi gerçekleştirir...
+
 </p>
 
-<h2>❓ Soru – Cevap</h2>
+<h4 class="ALT"></h4>
 
-<p><strong>Soru:</strong> Jean Valjean neden hapse girmiştir?</p>
-<p><strong>Cevap:</strong> Aç kalan ailesi için ekmek çaldığı için.</p>
+<h2>❓ Soru – Cevap</h2>
+<div class="soru">
+    <p>
+        <strong>Soru:</strong> DENEME SORU
+        <button class="cevap-btn" onclick="cevapGoster(this)">
+            Cevabı Göster
+        </button>
+    </p>
+
+    <p class="cevap">
+        <strong>Cevap:</strong>  DENEME CEVAP
+    </p>
+</div>
+<div class="soru">
+    <p>
+        <strong>Soru:</strong> Devrim hangi olay sonucu gerçekleşmiştir?
+        <button class="cevap-btn" onclick="cevapGoster(this)">
+            Cevabı Göster
+        </button>
+    </p>
+
+    <p class="cevap">
+        <strong>Cevap:</strong> Aç kalan ineklerin çıkardığı kargaşa
+    sonucu büyüyen gerilim tüm hayvanları devrime iter.
+    </p>
+</div>
 
 </body>
 </html>
